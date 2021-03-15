@@ -1,0 +1,56 @@
+
+
+#downloadImage{
+    width: 115px;
+    height: 35px;
+    display: block;
+    right: 0;
+    padding: auto;
+    margin-right: 10px;
+}
+
+.endButtons{
+    margin: 5px;
+}
+
+.jsonschema{
+    width: 75% !important;
+    height: 400px;
+    resize: none;
+}
+.jsonbody{
+    width: 100% !important;
+    height: 200px;
+    resize: none;
+}
+textarea {
+    background: url(http://i.imgur.com/2cOaJ.png) no-repeat local;
+    padding-left: 35px;
+    padding-top: 10px;
+    border-color:#ccc;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    line-height: 17px;
+}
+.errorsDisplayList li{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: darkred;
+    border-bottom: solid 1px #80808038;
+}
+li{
+    font-size: 20px;
+}
+
+.confirm{
+    left: 90%;
+}
+a{
+    cursor: pointer
+}
+
+.logtext{
+    white-space: pre-line;
+}

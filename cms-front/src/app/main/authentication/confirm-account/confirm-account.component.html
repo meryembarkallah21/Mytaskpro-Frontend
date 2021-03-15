@@ -1,0 +1,17 @@
+<div id="confirm-account" fxLayout="column">
+    <div id="confirm-account-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+        <div id="confirm-account-form" [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}" style="background-color: white;">
+
+                <img src="assets/images/logos/fuse.svg"> 
+            <div class="title">Please confirm your account</div>
+            <form>
+                <button mat-raised-button class="submit-button" color="accent" aria-label="RESET MY PASSWORD" (click)="confirm(token)">
+                    Confirm
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</div>

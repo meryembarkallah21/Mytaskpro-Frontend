@@ -1,0 +1,11 @@
+dist/
+node_modules
+.git
+.gitignore
+LICENSE
+README.md
+readme.txt
+npm-debug.log
+Dockerfile
+.dockerignore
+

@@ -1,0 +1,41 @@
+<div id="cards" class="page-layout simple fullwidth">
+
+    <!-- HEADER -->
+    <div class="header accent p-24 h-50" fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="column" fxLayoutAlign="center start">
+            <div class="h1">
+                <h1>OpenAPI Test </h1>
+            </div>
+            <div class="h4">
+                <h4> Test your API
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- / HEADER -->
+    <div class="page-layout blank p-24 h-50" fusePerfectScrollbar>
+        <div *ngIf="showJsonApi">
+            <div>
+            <textarea placeholder="{'key': 'value'}"
+                      spellcheck="false" class="jsonschema" id="formControlJsonTextareaResult" rows="3"
+                      [(ngModel)]="jsonData"></textarea>
+            </div>
+
+
+            <div fxLayoutAlign="end">
+
+                <button  mat-raised-button color="accent" class="confirm"
+                         (click)="generateMock()">Confirm</button>
+
+            </div>
+            <div fxLayoutAlign="center" [hidden]="!showSpinner">
+                <mat-spinner [diameter]="50" ></mat-spinner>
+            </div>
+            <div class="logtext"> {{logData}} </div>
+            <div fxLayoutAlign="center" *ngIf="isresult">
+                <a href="{{deploylink}}" target="_blank">{{deploylink}}</a>
+            </div>
+        </div>
+
+    </div>
+

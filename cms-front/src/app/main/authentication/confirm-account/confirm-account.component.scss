@@ -1,0 +1,79 @@
+@import "../../../../@fuse/scss/fuse";
+
+
+
+#confirm-account {
+    width: 100%;
+    background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
+    background-size: cover;
+
+
+    #confirm-account-intro {
+        //padding: 128px;
+
+        @include media-breakpoint('sm') {
+            padding: 128px 64px;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+          }
+          #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+          }
+          
+          #myBtn:hover {
+            background: #ddd;
+            color: black;
+          } 
+        }
+}
+
+#confirm-account-form-wrapper {
+    flex: 1 0 auto;
+    padding: 32px;
+}
+
+
+#confirm-account-form {
+    width: 400px;
+    max-width: 400px;
+    padding: 32px;
+    text-align: center;
+    @include mat-elevation(16);
+}
+
+.logo {
+    width: 128px;
+    margin: 32px auto;
+}
+
+.title {
+    font-size: 20px;
+    margin: 16px 0 32px 0;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+mat-form-field {
+    width: 100%;
+}
+
+.submit-button {
+    width: 220px;
+    margin: 16px auto;
+    display: block;
+}
+

@@ -1,0 +1,11 @@
+<div class="flex">
+    <mat-icon style="margin-right: 10px;" aria-label="{{ getIcon.icon }}">{{
+        getIcon.icon
+    }}</mat-icon>
+    <div class="data.class">{{ data.message }}</div>
+    <div class="dismiss">
+        <button mat-icon-button (click)="snackBarRef.dismiss()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
